@@ -1,0 +1,6 @@
+{
+  "appId": "id.adiguru.app",
+  "appName": "ADIGURU",
+  "webDir": "www",
+  "android": { "allowMixedContent": false }
+}

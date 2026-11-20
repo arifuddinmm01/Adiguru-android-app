@@ -1,0 +1,17 @@
+{
+  "name": "ADIGURU – Aplikasi Digital Guru",
+  "short_name": "ADIGURU",
+  "description": "Jadwal, absensi, nilai, tugas, jurnal, dan rekap untuk guru.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#efeaff",
+  "theme_color": "#b9abf6",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}
