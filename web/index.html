@@ -9,8 +9,8 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="theme-color" content="#b9abf6">
 <link rel="manifest" href="manifest.json">
-<link rel="icon" type="image/png" sizes="48x48" href="icons/favicon-48.png">
-<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="48x48" href="icons/logo-favicon-48.png">
+<link rel="apple-touch-icon" href="icons/logo-apple-180.png">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="ADIGURU">
@@ -18,6 +18,7 @@
 <link rel="preconnect" href="https://fvqcvdezixecwoebfsah.supabase.co" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script>try{var q=new URLSearchParams(location.search).get('admin');if(q==='1')localStorage.setItem('adg_admin','1');else if(q==='0')localStorage.removeItem('adg_admin');if(localStorage.getItem('adg_admin')==='1')document.documentElement.classList.add('admin')}catch(e){}</script>
 <script>try{var m=localStorage.getItem('adg_ringan');if(m!=='0')document.documentElement.classList.add('ringan')}catch(e){}</script>
 <link id="fav" rel="icon" type="image/webp" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -387,6 +388,65 @@ a.tglnil{font-weight:500;font-size:1em;color:#5b3fd4;color:inherit;text-decorati
 a.tglnil:hover{color:#5b3fd4;text-decoration:underline}
 .tglsub{font-weight:500;font-size:.92em;display:inline-block;margin-top:2px}
 @media print{a.tglnil{text-decoration:none;color:inherit!important}}
+
+/* ===== Layar masuk baru (segar, ringan: tanpa blur) ===== */
+html:not(.admin) .adm{display:none!important}
+#auth{max-width:none;margin:0;padding:0;position:relative;min-height:100vh}
+.lg-deco{position:fixed;inset:0;overflow:hidden;pointer-events:none;z-index:0;background:linear-gradient(160deg,#fbfaff 0%,#efeaff 52%,#e6eeff 100%)}
+.lg-deco i{position:absolute;display:block}
+.d-blob{border-radius:50%}
+.b1{width:520px;height:520px;left:-170px;top:8%;background:radial-gradient(circle at 35% 35%,rgba(155,130,240,.34),rgba(155,130,240,0) 68%)}
+.b2{width:560px;height:560px;right:-190px;bottom:-120px;background:radial-gradient(circle at 60% 55%,rgba(120,150,255,.34),rgba(120,150,255,0) 68%)}
+.d-ring{width:420px;height:420px;left:max(-120px,calc(50% - 640px));top:12%;border:1.5px solid rgba(124,92,230,.45);border-radius:50%}
+.d-dot{width:34px;height:34px;left:max(-6px,calc(50% - 548px));top:calc(12% + 150px);border-radius:50%;background:linear-gradient(135deg,#8e6df0,#6a4fe0);box-shadow:0 6px 14px rgba(106,79,224,.35)}
+.d-dot2{width:42px;height:42px;right:max(20px,calc(50% - 560px));bottom:20%;border-radius:50%;background:linear-gradient(135deg,#a58bf5,#6f7cf5);box-shadow:0 6px 14px rgba(106,79,224,.3)}
+.d-pill{border-radius:999px;transform-origin:center}
+.p1{width:170px;height:46px;left:max(10px,calc(50% - 520px));bottom:22%;background:linear-gradient(135deg,#8c78ee,#6c5bd8);transform:rotate(-52deg)}
+.p2{width:140px;height:40px;right:max(20px,calc(50% - 470px));top:34%;background:linear-gradient(135deg,#7f6be6,#a28df5);transform:rotate(-38deg)}
+.p3{width:150px;height:42px;right:max(0px,calc(50% - 520px));top:48%;background:linear-gradient(135deg,#4f8bff,#7aa8ff);transform:rotate(-52deg)}
+.p4{width:110px;height:32px;left:max(30px,calc(50% - 470px));bottom:10%;background:linear-gradient(135deg,#6ea0ff,#9bbcff);transform:rotate(-30deg);opacity:.9}
+.d-grid{width:110px;height:80px;background-image:radial-gradient(circle,#a893f0 3px,transparent 3.6px);background-size:22px 22px}
+.g1{right:max(20px,calc(50% - 520px));top:7%}
+.g2{left:max(20px,calc(50% - 560px));bottom:4%}
+.d-stripe{width:110px;height:110px;border-radius:50%;right:max(10px,calc(50% - 560px));bottom:2%;background:repeating-linear-gradient(135deg,rgba(124,92,230,.7) 0 3px,transparent 3px 9px);border:2px solid rgba(124,92,230,.55)}
+.lg-wrap{position:relative;z-index:1;max-width:430px;margin:0 auto;padding:34px 18px 26px}
+.lg-wrap .login-logo{position:relative;z-index:2;width:min(330px,86%);margin:0 auto -46px;filter:drop-shadow(0 8px 16px rgba(60,40,160,.28))}
+.lg-card{padding:58px 26px 24px;border-radius:28px;background:rgba(255,255,255,.94);border:1.5px solid #cfc3f7;box-shadow:0 18px 44px rgba(90,64,190,.18),inset 0 1px 0 #fff}
+.lg-head{display:flex;align-items:center;gap:12px}
+.lg-head h2{font:700 28px 'Poppins',sans-serif;color:#1d1a4d;margin:0}
+.lg-ic{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;color:#fff;background:linear-gradient(135deg,#8a6bf2,#5b3fd4);box-shadow:0 6px 14px rgba(91,63,212,.35)}
+.lg-ic svg{width:21px;height:21px}
+.lg-sub{margin:10px 0 18px;color:#5d5a86;font-size:13.5px}
+.lg-field{position:relative;margin-bottom:12px}
+.lg-field .ic{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:24px;height:24px;color:#7d69d8;display:grid;place-items:center}
+.lg-field .ic svg{width:22px;height:22px}
+.lg-field input{width:100%;box-sizing:border-box;height:50px;padding:0 48px 0 52px;border-radius:999px;border:1.5px solid #cfc6f5;background:#fff;font:500 14.5px 'Poppins',sans-serif;color:#2a2660;outline:none;transition:border-color .15s,box-shadow .15s}
+.lg-field input::placeholder{color:#9b97bd;font-weight:400}
+.lg-field input:focus{border-color:#7a5cf0;box-shadow:0 0 0 4px rgba(122,92,240,.16)}
+.lg-field .eye{position:absolute;right:10px;top:50%;transform:translateY(-50%);width:36px;height:36px;border:0;background:none;color:#7d69d8;cursor:pointer;border-radius:50%;display:grid;place-items:center}
+.lg-field .eye:hover{background:rgba(125,105,216,.12)}
+.lg-field .eye svg{width:22px;height:22px}
+.lg-btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.lg-main{flex:1 1 150px;height:50px;border:0;border-radius:999px;color:#fff;font:600 16px 'Poppins',sans-serif;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(135deg,#1d4ed8,#3b82f6);box-shadow:0 10px 20px rgba(37,99,235,.35);transition:transform .12s,box-shadow .12s}
+.lg-main svg{width:20px;height:20px}
+.lg-main:hover{transform:translateY(-1px);box-shadow:0 14px 24px rgba(37,99,235,.4)}
+.lg-main:active{transform:translateY(0)}
+.lg-sec{height:50px;padding:0 20px;border-radius:999px;border:1.5px solid #cfc6f5;background:#fff;color:#2a2660;font:600 14px 'Poppins',sans-serif;cursor:pointer;display:inline-flex;align-items:center;gap:8px}
+.lg-sec svg{width:18px;height:18px;color:#4f46e5}
+.lg-sec:hover{background:#f4f0ff}
+.lg-lupa{margin:16px 0 14px}
+.lg-lupa .linklupa{font-size:14px;color:#2f5fe0}
+.lg-info{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:16px;background:#ece8fb;border:1px solid #ddd5f7;color:#3d3978;font-size:13px;line-height:1.45}
+.lg-info .i{flex:none;width:26px;height:26px;border-radius:50%;background:#6a4fe0;color:#fff;display:grid;place-items:center;font:700 14px 'Roboto Slab',Georgia,serif}
+.lg-or{display:flex;align-items:center;gap:12px;margin:18px 0 12px;color:#9b97bd;font-size:12px}
+.lg-or::before,.lg-or::after{content:"";flex:1;height:1px;background:#e1dbf7}
+.lg-local{width:100%;height:46px;border-radius:999px;border:1.5px dashed #b9abf0;background:rgba(255,255,255,.7);color:#4a3fb0;font:600 14px 'Poppins',sans-serif;cursor:pointer}
+.lg-local:hover{background:#f4f0ff}
+.lg-note{margin:8px 0 0;text-align:center;color:#8b87a3;font-size:11.5px}
+.lg-wrap .copy{margin-top:20px}
+@media(max-width:560px){.d-ring,.p1,.p4,.g2,.d-dot{display:none}.lg-wrap{padding-top:22px}.lg-card{padding:54px 18px 20px}.lg-head h2{font-size:25px}}
+@media(prefers-reduced-motion:no-preference){.d-dot,.d-dot2{animation:lgf 7s ease-in-out infinite}.d-dot2{animation-delay:-3s}}
+@keyframes lgf{50%{transform:translateY(-8px)}}
 </style>
 <style id="pageStyle"></style>
 </head>
@@ -405,26 +465,31 @@ a.tglnil:hover{color:#5b3fd4;text-decoration:underline}
 </header>
 
 <div id="auth" hidden>
-  <img class="login-logo" data-logo alt="ADIGURU - Aplikasi Digital Guru">
-  <div class="card">
-    <h2>🔐 Masuk</h2>
-    <p class="muted" style="margin-top:0">Masuk untuk menyimpan data di Supabase.</p>
-    <div class="form">
-      <label class="wide">Email<input id="aEmail" type="email" autocomplete="email"></label>
-      <label class="wide">Kata sandi<input id="aPass" type="password" autocomplete="current-password" minlength="6"></label>
-    </div>
-    <div class="form mt">
-      <button class="btn inline c-green" onclick="A.login()">Masuk</button>
-      <button class="btn inline ghost" onclick="A.register()">Daftar</button>
-      <button class="btn inline ghost" onclick="A.openCfg()">Pengaturan</button>
-    </div>
-    <p style="margin:14px 0 0"><button type="button" class="linklupa" onclick="A.lupa()">Lupa kata sandi?</button></p>
-    <hr style="border:0;border-top:1px solid rgba(120,100,200,.2);margin:16px 0">
-    <p class="muted" style="margin:0 0 8px">Tidak ingin memakai akun? Simpan semua data hanya di perangkat ini, bisa dipakai tanpa internet.</p>
-    <button type="button" class="btn inline ghost" onclick="A.pakaiLokal()">📱 Pakai tanpa akun (data di perangkat ini)</button>
+  <div class="lg-deco" aria-hidden="true">
+    <i class="d-blob b1"></i><i class="d-blob b2"></i><i class="d-ring"></i><i class="d-dot"></i>
+    <i class="d-pill p1"></i><i class="d-pill p2"></i><i class="d-pill p3"></i><i class="d-pill p4"></i>
+    <i class="d-grid g1"></i><i class="d-grid g2"></i><i class="d-stripe"></i><i class="d-dot2"></i>
   </div>
-
-  <div class="copy">© 2026 ADIGURU · Aplikasi Digital Guru<br>Dikembangkan oleh <b>Arifuddin Thalib, S.Pd.</b> · <a href="#" onclick="openAbout();return false">Tentang Pengembang</a></div>
+  <div class="lg-wrap">
+    <img class="login-logo" data-logo alt="ADIGURU - Aplikasi Digital Guru">
+    <div class="card lg-card">
+      <div class="lg-head"><span class="lg-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><h2>Masuk</h2></div>
+      <p class="lg-sub">Masukkan akun Anda untuk mengakses aplikasi.</p>
+      <div class="lg-field"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 8 8 6 8-6"/></svg></span><input id="aEmail" type="email" placeholder="Email" aria-label="Email" autocomplete="email"></div>
+      <div class="lg-field"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="9" rx="2.5"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><input id="aPass" type="password" placeholder="Kata Sandi" aria-label="Kata sandi" autocomplete="current-password" minlength="6"><button type="button" class="eye" id="aEye" onclick="A.lihatSandi()" aria-label="Tampilkan kata sandi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></button></div>
+      <div class="lg-btns">
+        <button type="button" class="lg-main" onclick="A.login()">Masuk <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+        <button type="button" class="lg-sec" onclick="A.register()"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="8" r="3.5"/><path d="M3.5 20a6.5 6.5 0 0 1 13 0M19 8v6m3-3h-6"/></svg> Daftar</button>
+        <button type="button" class="lg-sec adm" onclick="A.openCfg()">Pengaturan</button>
+      </div>
+      <p class="lg-lupa"><button type="button" class="linklupa" onclick="A.lupa()">Lupa kata sandi?</button></p>
+      <div class="lg-info"><span class="i">i</span><span>Pastikan akun Anda terdaftar dan aktif untuk mengakses semua fitur.</span></div>
+      <div class="lg-or"><span>atau</span></div>
+      <button type="button" class="lg-local" onclick="A.pakaiLokal()">📱 Pakai tanpa akun</button>
+      <p class="lg-note">Data disimpan hanya di perangkat ini dan bisa dipakai tanpa internet.</p>
+    </div>
+    <div class="copy">© 2026 ADIGURU · Aplikasi Digital Guru<br><a href="#" onclick="openVersi();return false"><span class="verTxt"></span> · Riwayat pembaruan</a><br>Dikembangkan oleh <b>Arifuddin Thalib, S.Pd.</b> · <a href="#" onclick="openAbout();return false">Tentang Pengembang</a></div>
+  </div>
 </div>
 
 <div id="app" hidden>
@@ -440,13 +505,13 @@ a.tglnil:hover{color:#5b3fd4;text-decoration:underline}
     <button onclick="A.openBackup()">Cadangan &amp; pulihkan</button>
     <button onclick="A.openLogo()">Logo sekolah</button>
     <button onclick="A.openIdentitas()">Identitas &amp; tanda tangan</button>
-    <button onclick="A.openCfg()">Pengaturan Supabase</button>
+    <button class="adm" onclick="A.openCfg()">Pengaturan Supabase</button>
     <button id="btnOut" onclick="A.logout()" hidden>Keluar</button>
     <button onclick="openAbout()">Tentang Pengembang</button>
     <button id="btnPasang" onclick="A.pasang()" hidden>Pasang aplikasi</button>
     <button id="btnKeOnline" onclick="A.keOnline()" hidden>Beralih ke akun online</button>
     <button id="btnRingan" onclick="toggleRingan()"></button>
-    <div class="copy" style="margin-top:10px">© 2026 ADIGURU · Aplikasi Digital Guru<br>Dikembangkan oleh <b>Arifuddin Thalib, S.Pd.</b></div>
+    <div class="copy" style="margin-top:10px">© 2026 ADIGURU · Aplikasi Digital Guru<br><a href="#" onclick="openVersi();return false"><span class="verTxt"></span> · Riwayat pembaruan</a><br>Dikembangkan oleh <b>Arifuddin Thalib, S.Pd.</b></div>
   </footer>
 </div>
 
@@ -558,6 +623,11 @@ a.tglnil:hover{color:#5b3fd4;text-decoration:underline}
   </div>
 </dialog>
 
+<dialog id="dlgVersi">
+  <h3>Riwayat Pembaruan</h3>
+  <div id="verList" style="max-height:60vh;overflow:auto;font-size:14px"></div>
+  <button class="btn inline c-olive" style="margin-top:12px" onclick="$('dlgVersi').close()">Tutup</button>
+</dialog>
 <dialog id="dlgAbout">
   <img id="aboutLogo" alt="ADIGURU">
   <h3>Tentang Aplikasi</h3>
@@ -596,6 +666,28 @@ const TABLES = ['kelas','siswa','jadwal','absensi','nilai','tugas','pengumpulan'
 const CHILD = { kelas:['siswa','jadwal','tugas','jurnal'], siswa:['absensi','nilai','pengumpulan'], tugas:['pengumpulan'] };
 const FK = { kelas:'kelas_id', siswa:'siswa_id', tugas:'tugas_id' };
 const JENIS_NILAI = ['Tugas','Kuis','Praktik','UTS','UAS'];
+/* Nama yang tampil di layar. Nilai "Kuis" di database tidak diubah (aman untuk data lama), hanya namanya yang ditampilkan "Ulangan Harian". */
+const JENIS_TAMPIL = { Kuis: 'Ulangan Harian' };
+const tj = j => JENIS_TAMPIL[j] || j;
+
+/* ===== Versi aplikasi dan riwayat pembaruan (tambahkan entri baru di paling atas setiap ada pembaruan) ===== */
+const APP_VERSI = '1.8';
+const CHANGELOG = [
+  { v: '1.8', tgl: '2026-11-21', isi: ['Ikon aplikasi saat dipasang ke layar utama kini memakai logo ADIGURU (sebelumnya ikon buku)'] },
+  { v: '1.7', tgl: '2026-11-21', isi: ['Tampilan layar Masuk dibuat lebih segar (logo tidak diubah), ada tombol lihat kata sandi dan Enter untuk masuk', 'Tombol Pengaturan Supabase disembunyikan dari pengguna biasa; tampil bila alamat dibuka dengan ?admin=1 (sembunyikan lagi dengan ?admin=0)'] },
+  { v: '1.6', tgl: '2026-11-21', isi: ['Batas bawah nilai pada Rekap (semua nilai di bawah batas atau hanya nilai 0), berlaku di tampilan, cetak, dan ekspor', 'Jenis penilaian "Kuis" diganti nama menjadi "Ulangan Harian"', 'Footnote versi dan menu Riwayat pembaruan'] },
+  { v: '1.5', tgl: '2026-11-20', isi: ['Mode lokal: data disimpan di perangkat dan bisa dipakai tanpa internet, tanpa akun', 'Aplikasi Android (APK) dengan Bagikan untuk cadangan/ekspor dan cetak lewat berkas HTML', 'Pengingat cadangan terakhir'] },
+  { v: '1.4', tgl: '2026-11-19', isi: ['Tanggal setiap penilaian tampil di rekap nilai dan bisa diklik menuju input nilai tanggal itu', 'Bobot penilaian per kelas dan kolom Nilai Akhir', 'Rekap Per Siswa: rincian nilai, rata-rata, nilai akhir, dan kehadiran satu siswa'] },
+  { v: '1.3', tgl: '2026-11-15', isi: ['Bisa dipasang ke layar utama HP (PWA) dan tampilan tetap terbuka saat offline', 'Penomoran otomatis Tugas 1, Tugas 2, dan seterusnya mengikuti urutan tanggal'] },
+  { v: '1.2', isi: ['Keterangan pada nilai, hapus nilai per tanggal, impor nilai dari Excel/CSV dan template', 'Kop sekolah (logo) pada dokumen cetak', 'Identitas guru dan kepala sekolah (nama, NIP) dan tanda tangan pada dokumen cetak'] },
+  { v: '1.1', isi: ['Tampilan baru bergaya kaca (glassmorphism) dengan mode ringan sebagai bawaan', 'Lupa kata sandi, Cadangan dan Pulihkan data, hapus absensi tersimpan, unggah logo sekolah'] },
+  { v: '1.0', isi: ['Jadwal, Absensi, Nilai, Tugas, Jurnal, Rekap, dan Kelas dengan penyimpanan Supabase'] }
+];
+function openVersi() {
+  $('verList').innerHTML = CHANGELOG.map(c => `<div style="margin:0 0 14px"><b>Versi ${esc(c.v)}</b>${c.tgl ? ' <span class="muted">· ' + esc(fmtTgl(c.tgl)) + '</span>' : ''}<ul style="margin:4px 0 0;padding-left:20px">${c.isi.map(x => `<li style="margin:2px 0">${esc(x)}</li>`).join('')}</ul></div>`).join('');
+  $('dlgVersi').showModal();
+}
+function isiVersi() { document.querySelectorAll('.verTxt').forEach(e => { const c = CHANGELOG[0]; e.textContent = 'Versi ' + APP_VERSI + (c && c.tgl ? ' (' + fmtTgl(c.tgl) + ')' : ''); }); }
 
 const today = () => { const d = new Date(); return new Date(d - d.getTimezoneOffset()*6e4).toISOString().slice(0,10); };
 const hhmm = s => String(s || '').slice(0,5);
@@ -942,12 +1034,26 @@ function daftarPenilaian(kid, tambah) {
   if (tambah && tambah.jenis && tambah.tanggal) (per[tambah.jenis] = per[tambah.jenis] || new Set()).add(tambah.tanggal);
   const urut = JENIS_NILAI.filter(j => per[j]); Object.keys(per).forEach(j => { if (!urut.includes(j)) urut.push(j); });
   const list = [], map = {};
-  urut.forEach(j => { const ds = [...per[j]].sort(); ds.forEach((d, i) => { const label = ds.length > 1 ? j + ' ' + (i + 1) : j; list.push({ jenis: j, tanggal: d, label }); map[j + '|' + d] = label; }); });
+  urut.forEach(j => { const ds = [...per[j]].sort(); ds.forEach((d, i) => { const label = ds.length > 1 ? tj(j) + ' ' + (i + 1) : tj(j); list.push({ jenis: j, tanggal: d, label }); map[j + '|' + d] = label; }); });
   return { list, map };
 }
 const labelNilai = (dp, n) => dp.map[n.jenis + '|' + n.tanggal] || n.jenis;
 
-/* ===== Bobot penilaian (per kelas, disimpan di perangkat) ===== */
+/* ===== Batas bawah nilai (per kelas, disimpan di perangkat). Hanya mengubah tampilan rekap, cetak, dan ekspor; data asli tidak berubah. ===== */
+const BATAS_KEY = 'adg_batas';
+function batasSemua() { try { return JSON.parse(localStorage.getItem(BATAS_KEY)) || {}; } catch (e) { return {}; } }
+function getBatas(kid) {
+  const b = batasSemua()[kid]; if (!b) return null;
+  const m = Number(b.min); if (!isFinite(m) || m <= 0 || m > 100) return null;
+  return { min: m, mode: b.mode === 'nol' ? 'nol' : 'semua' };
+}
+const skorBatas = (b, v) => { v = Number(v); return !b ? v : (b.mode === 'nol' ? (v === 0 ? b.min : v) : (v < b.min ? b.min : v)); };
+/* nilai milik satu kelas; bila terapkan=true, nilai di bawah batas bawah dinaikkan */
+function nilaiKelas(kid, terapkan) {
+  const ids = new Set(siswaOf(kid).map(x => x.id)), b = terapkan ? getBatas(kid) : null;
+  return S.nilai.filter(n => ids.has(n.siswa_id)).map(n => b ? { ...n, skor: skorBatas(b, n.skor) } : n);
+}
+/* Bobot penilaian (per kelas, disimpan di perangkat) */
 const BOBOT_KEY = 'adg_bobot';
 function bobotSemua() { try { return JSON.parse(localStorage.getItem(BOBOT_KEY)) || {}; } catch (e) { return {}; } }
 function getBobot(kid) {
@@ -956,13 +1062,13 @@ function getBobot(kid) {
   Object.keys(b).forEach(j => { const v = Number(b[j]); if (isFinite(v) && v > 0) { o[j] = v; ada = true; } });
   return ada ? o : null;
 }
-const fmtBobot = b => Object.keys(b).map(j => j + ' ' + round1(b[j]) + '%').join(', ');
+const fmtBobot = b => Object.keys(b).map(j => tj(j) + ' ' + round1(b[j]) + '%').join(', ');
 /* Nilai akhir = rata-rata tiap jenis x bobot, dibagi total bobot jenis yang sudah punya nilai di kelas itu.
    Siswa yang belum punya nilai pada jenis tersebut dihitung 0. */
-function nilaiAkhir(kid) {
+function nilaiAkhir(kid, terapkan) {
   const bobot = getBobot(kid); if (!bobot) return null;
-  const sis = siswaOf(kid), ids = new Set(sis.map(x => x.id));
-  const all = S.nilai.filter(n => ids.has(n.siswa_id));
+  const sis = siswaOf(kid);
+  const all = nilaiKelas(kid, terapkan);
   const pakai = Object.keys(bobot).filter(j => all.some(n => n.jenis === j));
   if (!pakai.length) return { bobot, pakai, map: new Map(), total: 0 };
   const total = pakai.reduce((a, j) => a + bobot[j], 0), map = new Map();
@@ -979,11 +1085,11 @@ function cardBobot() {
   const na = nilaiAkhir(ui.nilKelas);
   return `<div class="card mt noprint"><h2>⚖️ Bobot Penilaian</h2>
     <p class="muted" style="margin-top:0">Atur persentase tiap jenis penilaian untuk kelas <b>${esc(k ? k.nama : '')}</b>. Isi sesuka Anda, kosongkan atau 0 bila tidak dipakai. Nilai akhir muncul di rekap bila ada bobot.</p>
-    <div class="form">${JENIS_NILAI.map(j => `<label>${j} (%)<input type="number" min="0" max="100" step="0.5" id="bb_${j}" style="min-width:90px" value="${b[j] ? Number(b[j]) : ''}" oninput="A.bobotTotal()"></label>`).join('')}
+    <div class="form">${JENIS_NILAI.map(j => `<label>${tj(j)} (%)<input type="number" min="0" max="100" step="0.5" id="bb_${j}" style="min-width:90px" value="${b[j] ? Number(b[j]) : ''}" oninput="A.bobotTotal()"></label>`).join('')}
     <button class="btn inline c-olive" onclick="A.saveBobot()">Simpan Bobot</button>
     <button class="btn inline ghost" onclick="A.resetBobot()">Hapus Bobot</button></div>
     <p class="muted" id="bbTotal" style="margin:10px 0 0">Total bobot: <b>${round1(tot)}%</b>${tot && Math.abs(tot - 100) > 0.01 ? ' — tidak 100%, nilai akhir tetap dihitung proporsional' : ''}</p>
-    ${na && na.pakai.length < Object.keys(na.bobot).length ? `<p class="muted" style="margin:6px 0 0">Jenis yang belum punya nilai di kelas ini (${Object.keys(na.bobot).filter(j => !na.pakai.includes(j)).join(', ')}) belum ikut dihitung.</p>` : ''}
+    ${na && na.pakai.length < Object.keys(na.bobot).length ? `<p class="muted" style="margin:6px 0 0">Jenis yang belum punya nilai di kelas ini (${Object.keys(na.bobot).filter(j => !na.pakai.includes(j)).map(tj).join(', ')}) belum ikut dihitung.</p>` : ''}
   </div>`;
 }
 
@@ -995,7 +1101,7 @@ function vNilai() {
   const ketAwal = (tersimpan.find(n => n.keterangan) || {}).keterangan || '';
   const input = `<div class="card"><h2>📊 Input Nilai</h2><div class="form">
     <label>Kelas<select id="nKelas" onchange="A.nilChange()">${kelasOpts(ui.nilKelas)}</select></label>
-    <label>Jenis<select id="nJenis" onchange="A.nilChange()">${JENIS_NILAI.map(j => `<option ${j === ui.nilJenis ? 'selected' : ''}>${j}</option>`).join('')}</select></label>
+    <label>Jenis<select id="nJenis" onchange="A.nilChange()">${JENIS_NILAI.map(j => `<option value="${j}" ${j === ui.nilJenis ? 'selected' : ''}>${tj(j)}</option>`).join('')}</select></label>
     <label>Tanggal<input id="nTgl" type="date" value="${ui.nilTgl}" onchange="A.nilChange()"></label>
     <label class="wide">Keterangan (nilai ini untuk apa?)<input id="nKet" type="text" maxlength="120" value="${esc(ketAwal)}" placeholder="Contoh: Ulangan Bab 3 - Kerajaan Hindu-Buddha"></label>
     <button class="btn inline c-olive" onclick="A.saveNilai()">Simpan Nilai</button>
@@ -1003,7 +1109,7 @@ function vNilai() {
     <button class="btn inline ghost" onclick="A.templateNilai()">⬇️ Template</button>
     ${tersimpan.length ? `<button class="btn inline ghost hapusAbs" onclick="A.nilHapusTgl()">🗑️ Hapus nilai tanggal ini (${tersimpan.length})</button>` : ''}</div>
     <p class="muted" style="margin:10px 0 0">Akan tercatat sebagai: <b>${esc(daftarPenilaian(ui.nilKelas, { jenis: ui.nilJenis, tanggal: ui.nilTgl }).map[ui.nilJenis + '|' + ui.nilTgl])}</b> (nomor mengikuti urutan tanggal).</p>
-    ${tersimpan.length ? `<p class="muted" style="margin:10px 0 0">Sudah ada ${tersimpan.length} nilai ${esc(ui.nilJenis)} tersimpan pada ${fmtTgl(ui.nilTgl)}. Mengubah angka lalu menekan Simpan Nilai akan memperbarui nilai itu, bukan menambah baru.</p>` : ''}
+    ${tersimpan.length ? `<p class="muted" style="margin:10px 0 0">Sudah ada ${tersimpan.length} nilai ${esc(tj(ui.nilJenis))} tersimpan pada ${fmtTgl(ui.nilTgl)}. Mengubah angka lalu menekan Simpan Nilai akan memperbarui nilai itu, bukan menambah baru.</p>` : ''}
     ${sis.length ? `<div class="tw mt"><table><tr><th>Nama</th><th>Skor (0-100)</th></tr>${sis.map(s => `<tr><td>${esc(s.nama)}</td><td><input type="number" min="0" max="100" step="0.5" id="nv_${s.id}" style="min-width:100px" value="${simpanMap.has(s.id) ? Number(simpanMap.get(s.id).skor) : ''}"></td></tr>`).join('')}</table></div>` : '<p class="muted">Kelas ini belum punya siswa.</p>'}
   </div>`;
   const dpNil = daftarPenilaian(ui.nilKelas), naNil = nilaiAkhir(ui.nilKelas);
@@ -1081,8 +1187,8 @@ const round1 = x => Math.round(x * 10) / 10;
 const meanSkor = arr => arr.reduce((a, n) => a + Number(n.skor), 0) / arr.length;
 const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'kelas';
 function rekapKelas(kid) {
-  const sis = siswaOf(kid), ids = new Set(sis.map(s => s.id));
-  const all = S.nilai.filter(n => ids.has(n.siswa_id));
+  const sis = siswaOf(kid);
+  const all = nilaiKelas(kid, true);
   const dp = daftarPenilaian(kid), jenis = dp.list.map(x => x.label);
   const rows = sis.map(s => {
     const ns = all.filter(n => n.siswa_id === s.id);
@@ -1115,7 +1221,7 @@ function buildLaporan() {
   if (tipe === 'nilai') {
     const r = rekapKelas(k.id), v = x => x === null ? '' : x;
     const thnBeda = new Set(r.dp.list.map(x => x.tanggal.slice(0, 4))).size > 1;
-    const na = nilaiAkhir(k.id), pakaiNa = !!(na && na.pakai.length);
+    const na = nilaiAkhir(k.id, true), pakaiNa = !!(na && na.pakai.length);
     const detail = [['Nama', 'Jenis', 'Skor', 'Tanggal', 'Keterangan']];
     r.rows.forEach(x => [...x.ns].sort((a, b) => a.tanggal.localeCompare(b.tanggal)).forEach(n => detail.push([x.nama, labelNilai(r.dp, n), Number(n.skor), n.tanggal, n.keterangan || ''])));
     return {
@@ -1135,16 +1241,16 @@ function buildLaporan() {
     const sw = siswaOf(k.id).find(x => x.id === ui.rekSiswa);
     if (!sw) return { title: 'REKAP NILAI PER SISWA', meta: metaKelas, left: [1, 3], wide: false, lands: false, header: [], rows: [], cols: [], name: 'rekap-siswa', kosong: 'Kelas ini belum punya siswa.' };
     const dp = daftarPenilaian(k.id), ids = new Set(siswaOf(k.id).map(x => x.id));
-    const mine = S.nilai.filter(n => n.siswa_id === sw.id);
-    const kelasAvg = (j, t) => { const v = S.nilai.filter(n => ids.has(n.siswa_id) && n.jenis === j && n.tanggal === t); return v.length ? round1(meanSkor(v)) : ''; };
+    const NK = nilaiKelas(k.id, true), mine = NK.filter(n => n.siswa_id === sw.id);
+    const kelasAvg = (j, t) => { const v = NK.filter(n => n.jenis === j && n.tanggal === t); return v.length ? round1(meanSkor(v)) : ''; };
     const urut = [];
     dp.list.forEach(x => mine.filter(n => n.jenis === x.jenis && n.tanggal === x.tanggal).forEach(n => urut.push({ x, n })));
     const rows = urut.map((u, i) => [i + 1, u.x.label, fmtTgl(u.x.tanggal), u.n.keterangan || '', Number(u.n.skor), kelasAvg(u.x.jenis, u.x.tanggal)]);
     const foot = [];
     const jn = [...new Set(urut.map(u => u.n.jenis))];
-    jn.forEach(j => { const v = mine.filter(n => n.jenis === j); foot.push(['', 'Rata-rata ' + j + ' (' + v.length + ' nilai)', '', '', round1(meanSkor(v)), '']); });
+    jn.forEach(j => { const v = mine.filter(n => n.jenis === j); foot.push(['', 'Rata-rata ' + tj(j) + ' (' + v.length + ' nilai)', '', '', round1(meanSkor(v)), '']); });
     if (mine.length) foot.push(['', 'Rata-rata seluruh nilai', '', '', round1(meanSkor(mine)), '']);
-    const na = nilaiAkhir(k.id);
+    const na = nilaiAkhir(k.id, true);
     if (na && na.pakai.length && na.map.has(sw.id)) foot.push(['', 'NILAI AKHIR (berbobot)', '', '', na.map.get(sw.id), '']);
     const ab = S.absensi.filter(a => a.siswa_id === sw.id), cnt = st => ab.filter(a => a.status === st).length;
     if (ab.length) foot.push(['', 'Kehadiran (' + ab.length + ' pertemuan tercatat)', '', 'Hadir ' + cnt('Hadir') + ' · Sakit ' + cnt('Sakit') + ' · Izin ' + cnt('Izin') + ' · Alpa ' + cnt('Alpa'), Math.round(cnt('Hadir') / ab.length * 100) + '%', '']);
@@ -1225,12 +1331,15 @@ function vRekap() {
     <div class="form">
       <label>Kelas<select id="pKelas" onchange="A.rekChange()">${opsKelas}</select></label>
       ${ui.rekTipe === 'siswa' ? `<label>Siswa<select id="pSiswa" onchange="A.rekChange()">${siswaOf(ui.rekKelas).map(x => `<option value="${x.id}" ${x.id === ui.rekSiswa ? 'selected' : ''}>${esc(x.nama)}</option>`).join('')}</select></label>` : ''}
+      ${ui.rekTipe === 'nilai' || ui.rekTipe === 'siswa' ? (() => { const b = getBatas(ui.rekKelas) || {}; return `<label>Batas bawah nilai<input id="pBatas" type="number" min="0" max="100" step="1" placeholder="mis. 60" style="width:120px" value="${b.min || ''}" onchange="A.setBatas()"></label>
+      <label>Berlaku untuk<select id="pBatasMode" onchange="A.setBatas()"><option value="semua" ${b.mode !== 'nol' ? 'selected' : ''}>Semua nilai di bawah batas</option><option value="nol" ${b.mode === 'nol' ? 'selected' : ''}>Hanya nilai 0</option></select></label>`; })() : ''}
       ${ui.rekTipe !== 'nilai' && ui.rekTipe !== 'siswa' ? `<label>Bulan<input id="pBulan" type="month" value="${esc(bulanAktif())}" onchange="A.rekChange()"></label>` : ''}
       <button class="btn inline c-olive" onclick="A.rekExport('xlsx')">⬇️ Excel (.xlsx)</button>
       <button class="btn inline c-green" onclick="A.rekExport('csv')">⬇️ CSV</button>
       <button class="btn inline ghost" onclick="A.rekCetak()">🖨️ Cetak</button>
       <button class="btn inline ghost" onclick="A.openIdentitas()">✍️ Identitas &amp; TTD</button>
     </div>
+    ${(ui.rekTipe === 'nilai' || ui.rekTipe === 'siswa') && ui.rekKelas !== 'semua' ? (() => { const b = getBatas(ui.rekKelas); if (!b) return ''; const n = nilaiKelas(ui.rekKelas, false).filter(x => skorBatas(b, x.skor) !== Number(x.skor)).length; return `<p class="muted" style="margin:8px 0 0"><b>Batas bawah aktif: ${round1(b.min)}</b> (${b.mode === 'nol' ? 'hanya nilai 0' : 'semua nilai di bawah batas'}). ${n} nilai disesuaikan pada rekap, cetak, dan ekspor. Data asli di menu Nilai tidak berubah. Kosongkan kolom batas untuk menonaktifkan.</p>`; })() : ''}
     <p class="muted" style="font-size:12px;margin-bottom:0">Google Sheets: unggah file .xlsx ke Google Drive lalu buka dengan Sheets, atau di Sheets pilih File &gt; Import &gt; Upload dan pilih file CSV.</p></div>
     <div class="card mt"><h2>${esc(L ? L.title : '')}</h2>
       ${!L ? '' : `<p class="muted" style="font-size:12px">${L.meta.map(m => esc(m[0]) + ': ' + esc(m[1])).join(' · ')}</p>` +
@@ -1377,6 +1486,13 @@ const A = {
     if (!rows.length) return toast('Belum ada status yang dipilih', true);
     await run(async () => { await DB.upsertMany('absensi', rows, ['siswa_id', 'tanggal']); toast('Absensi tersimpan'); });
   },
+  setBatas() {
+    const raw = ($('pBatas').value || '').trim(), mode = $('pBatasMode').value, all = batasSemua();
+    if (raw === '' || Number(raw) === 0) { delete all[ui.rekKelas]; }
+    else { const v = Number(raw); if (!isFinite(v) || v < 0 || v > 100) return toast('Batas bawah harus angka 0 sampai 100', true); all[ui.rekKelas] = { min: v, mode }; }
+    try { localStorage.setItem(BATAS_KEY, JSON.stringify(all)); } catch (e) { return toast('Gagal menyimpan pengaturan di perangkat ini', true); }
+    render(); toast(all[ui.rekKelas] ? 'Batas bawah diterapkan pada rekap' : 'Batas bawah dinonaktifkan');
+  },
   bobotTotal() { const t = JENIS_NILAI.reduce((a, j) => a + (Number(($('bb_' + j) || {}).value) || 0), 0); const e = $('bbTotal'); if (e) e.innerHTML = 'Total bobot: <b>' + round1(t) + '%</b>' + (t && Math.abs(t - 100) > 0.01 ? ' — tidak 100%, nilai akhir tetap dihitung proporsional' : ''); },
   saveBobot() {
     const b = {}; let bad = false;
@@ -1401,7 +1517,7 @@ const A = {
   async nilHapusTgl() {
     const ada = A.nilTersimpan(); if (!ada.length) return;
     const k = kelasById(ui.nilKelas);
-    if (!confirm(`Hapus ${ada.length} nilai ${ui.nilJenis} kelas ${k ? k.nama : ''} pada ${fmtTgl(ui.nilTgl)}?\n\nTindakan ini tidak bisa dibatalkan. Anda bisa menginput ulang nilainya sesudahnya.`)) return;
+    if (!confirm(`Hapus ${ada.length} nilai ${tj(ui.nilJenis)} kelas ${k ? k.nama : ''} pada ${fmtTgl(ui.nilTgl)}?\n\nTindakan ini tidak bisa dibatalkan. Anda bisa menginput ulang nilainya sesudahnya.`)) return;
     await run(async () => { await DB.removeMany('nilai', ada.map(n => n.id)); render(); toast(`${ada.length} nilai dihapus`); });
   },
   async saveNilai() {
@@ -1555,6 +1671,11 @@ const A = {
     if (!/^https:\/\/.+\.supabase\.(co|in)$/.test(url) || key.length < 20) return toast('URL atau key tidak valid', true);
     localStorage.setItem('adg_cfg', JSON.stringify({ url, key })); location.reload();
   },
+  lihatSandi() {
+    const i = $('aPass'), t = i.type === 'password'; i.type = t ? 'text' : 'password';
+    $('aEye').setAttribute('aria-label', t ? 'Sembunyikan kata sandi' : 'Tampilkan kata sandi');
+    $('aEye').style.color = t ? '#4f46e5' : '';
+  },
   pakaiLokal() {
     if (!confirm('Pakai mode lokal?\n\n• Data tersimpan hanya di perangkat ini dan bisa dipakai tanpa internet.\n• Tidak ada login. Data tidak otomatis tersinkron ke perangkat lain.\n• Jika aplikasi/browser dihapus atau HP hilang, data ikut hilang. Unduh cadangan secara berkala (menu Backup).\n\nLanjutkan?')) return;
     try { localStorage.setItem('adg_lokal', '1'); } catch (e) { return toast('Browser menolak menyimpan pengaturan', true); }
@@ -1615,7 +1736,9 @@ async function boot() {
     const n = prompt('Nama sekolah:', localStorage.getItem('adg_sekolah') || '');
     if (n !== null) { localStorage.setItem('adg_sekolah', n.trim()); renderHeader(); }
   };
+  ['aEmail', 'aPass'].forEach(id => { const e = $(id); if (e) e.addEventListener('keydown', ev => { if (ev.key === 'Enter') { ev.preventDefault(); A.login(); } }); });
   DB.init();
+  isiVersi();
   renderHeader();
   if (/error_code=|error=access_denied/.test(HASH0)) {
     history.replaceState(null, '', location.pathname + location.search);
